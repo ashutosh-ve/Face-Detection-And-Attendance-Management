@@ -1,0 +1,15 @@
+import cv2
+import numpy as np
+import face_recognition
+
+
+imgAmitab = face_recognition.load_image_file('ImagesBasic/Amitab.jpg')
+imgAmitab = cv2.cvtColor(imgAmitab.cv2.COLOR_BGR2RGB)
+
+imgTest = face_recognition.load_image_file('ImagesBasic/Amitab Test.jpg')
+imgTest = cv2.cvtColor(imgTest.cv2.COLOR_BGR2RGB)
+
+cv2.imshow('Amitab'.imgAmitab)
+cv2.imshow('Amitab Test'.imgAmitab)
+
+cv2.waitKey(0)
